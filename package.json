@@ -1,11 +1,19 @@
 {
   "name": "mycamp-front",
+  "author": "savioferraz",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.2.3",
+    "dayjs": "^1.11.7",
+    "eslint": "^8.32.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-icons": "^4.7.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,7 +22,88 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "react-hooks/exhaustive-deps": "off",
+      "react-hooks/rules-of-hooks": "off",
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": 0,
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "comma-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "semi-spacing": [
+        "error",
+        {
+          "before": false,
+          "after": true
+        }
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "key-spacing": [
+        "error",
+        {
+          "beforeColon": false
+        }
+      ],
+      "padded-blocks": [
+        "error",
+        "never"
+      ],
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1
+        }
+      ],
+      "lines-between-class-members": [
+        "error",
+        "always",
+        {
+          "exceptAfterSingleLine": true
+        }
+      ],
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "space-before-blocks": [
+        "error",
+        "always"
+      ],
+      "eol-last": [
+        "error",
+        "always"
+      ],
+      "arrow-spacing": [
+        "error",
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "no-console": "warn"
+    }
   },
   "browserslist": {
     "production": [
